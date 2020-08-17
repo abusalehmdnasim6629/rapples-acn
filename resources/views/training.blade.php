@@ -1,9 +1,24 @@
 @extends('layout.home')
 
 @section('content')
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 <style>
-
+   * {
+	  box-sizing: border-box;
+	  margin: 0;
+	  padding: 0;
+	}
+	  .wwd{
+	  color:white;
+	}
+	.logo{
+	  width:226px;
+	  height:74px;
+	}
+	.gimg{
+	   height:300px;
+	   width:300px;
+	}
 	
 	.card {
 	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -15,11 +30,37 @@
 	  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	}
 
+	.cardimg {
+	  border-radius: 5px 5px 0 0;
+	}
 
+	.cardcontainer {
+	  padding: 2px 16px;
+	}
+	.count{
+	  margin:0 auto;
+	}
+	.countdowncontainer h1 {
+	  font-weight: normal;
+	}
 
+	.countdowncontainer li {
+	  display: inline-block;
+	  font-size: 1.5em;
+	  list-style-type: none;
+	  padding: 1em;
+	  text-transform: uppercase;
+	}
 
+	.countdowncontainer li span {
+	  display: block;
+	  font-size: 4.5rem;
+	}
+	.tck{
+	  margin:0 auto;
+	  display:block;
+	}
 	
-
 	.lnk h3{
 	  margin:0 auto;
 	  display:block;
@@ -34,6 +75,7 @@
 	.ti{
 	  font-size:25px;
 	  font-weight:bold;
+	  
 	}
 	.card-deck{
 	   margin-bottom:10px;
@@ -53,6 +95,9 @@
 	 font-size:25px;
 	 margin-bottom:10px;
 	}
+	
+	
+	
     .br{
         background: url('assets/img/bg.jpg') top left no-repeat;
         -webkit-background-size: auto auto, cover;
@@ -60,8 +105,12 @@
         -moz-background-size: auto auto, cover;
         background-size: auto auto, cover;
         height:400px;
-    }
+	}
+	
 
+    #home, #menu3 , #menu1, #menu2{
+	   margin-bottom:50px;
+   } 
  
 	
 </style>
@@ -90,7 +139,7 @@
 
 
 <!--SCHEDULE-->
-<section>
+<section >
     <div id="lgx-schedule" class="lgx-schedule">
         <div class="lgx-inner br">
             <div class="container">
@@ -653,14 +702,16 @@
             <!-- //.CONTAINER -->
         </div>
         <!-- //.INNER -->
-    </div>
+	</div>
+	
 </section>
 <!--SCHEDULE END-->
 
 <section>
     <div class="container">
 	 
-	 <div class="row">
+	 <div class="row" >
+		
 	  <h5 class="ti">MOTIVATIONAL VIDEOS<h5>
 	  <div class="col-md-12">
 	   <div class="row">
@@ -1061,8 +1112,16 @@
 		 </div>
   
 </section>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 
-
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+$('.card-deck a').fancybox({
+  caption : function( instance, item ) {
+    return $(this).parent().find('.card-text').html();
+  }
+});
+</script>
 
 
 

@@ -28,6 +28,8 @@ Route::get('/about-us','HomeController@about');
 Route::get('/contact-us','HomeController@contact');
 Route::get('/our-gallery','HomeController@gallery');
 Route::get('/shop','HomeController@shop');
+Route::get('/single-shop','HomeController@single_shop');
+
 
 
 

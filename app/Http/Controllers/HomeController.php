@@ -67,4 +67,9 @@ class HomeController extends Controller
         return view('shop');
     }
 
+    public function single_shop(){
+
+        return view('single_shop');
+    }
+
 }

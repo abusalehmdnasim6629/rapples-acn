@@ -2343,12 +2343,8 @@ button {
 .lgx-schedule .lgx-tab .lgx-single-tab:hover:last-child {
   border-radius: 0 0 4px 4px;
 }
-.lgx-schedule .lgx-tab .lgx-single-tab:hover p {
-  color: #fff;
-}
-.lgx-schedule .lgx-tab .lgx-single-tab:hover .time-area .time span {
-  color: #fff;
-}
+
+
 .lgx-schedule .lgx-tab .lgx-single-tab:hover .author .author-img img {
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
@@ -2360,24 +2356,7 @@ button {
   animation-duration: 400ms;
   animation-timing-function: linear;
 }
-.lgx-schedule .lgx-tab .lgx-single-tab:hover .author .author-info .name {
-  color: #fff;
-}
-.lgx-schedule .lgx-tab .lgx-single-tab:hover .author .author-info .name a {
-  color: inherit;
-}
-.lgx-schedule .lgx-tab .lgx-single-tab:hover .author .author-info .author-title {
-  color: #fff;
-}
-.lgx-schedule .lgx-tab .lgx-single-tab:hover .schedule-info {
-  text-align: left;
-}
-.lgx-schedule .lgx-tab .lgx-single-tab:hover .schedule-info .title {
-  color: #fff;
-}
-.lgx-schedule .lgx-tab .lgx-single-tab:hover .schedule-info .title a {
-  color: inherit;
-}
+
 /*-------------------------------------------------------------------*/
 /* 2.7  Sponsors SECTION
 ---------------------------------------------------------------------*/

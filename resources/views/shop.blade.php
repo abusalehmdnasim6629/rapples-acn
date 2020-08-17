@@ -12,6 +12,10 @@
         height:400px;
     }
 
+    .drop{
+        margin-bottom:10px;
+    }
+
 
 </style>
 <section class="bn">
@@ -35,10 +39,13 @@
         </div>
     </div>
 </section>
-<section>
 
-    <div class="container">
-        <div class="row">
+<section>
+    
+    <div id="lgx-speakers" class="lgx-speakers">
+        <div class="lgx-inner">
+            <div class="container">
+            <div class="row">
 		        <div class="col-xs-12 col-sm-6 col-md-9">  
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-3">  				
@@ -55,25 +62,19 @@
 					</div>
                 </div>
         </div>
-    </div>
-
-</section>
-<section>
-    <div id="lgx-speakers" class="lgx-speakers">
-        <div class="lgx-inner">
-            <div class="container">
                 <div class="row">
+                   
                    <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="lgx-single-speaker lgx-single-speaker-sm">
                             <figure>
-                                <a class="shop-img" href=""><img src="assets/img/shop3.jpg" alt="speaker"/></a>
+                                <a class="shop-img" href="{{URL::to('/single-shop')}}"><img src="assets/img/shop3.jpg" alt="speaker"/></a>
                                 <figcaption>
-                                    <a class="sp-tw" href="#"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                    <a class="sp-tw" href="{{URL::to('/single-shop')}}"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
                                     
                                 </figcaption>
                             </figure>
                             <div class="speaker-info">
-                                <h3 class="title"><a href="speaker-single.html">Team Tiger T-Shirt</a></h3>
+                                <h3 class="title"><a href="{{URL::to('/single-shop')}}">Team Tiger T-Shirt</a></h3>
                                 <h4 class="subtitle">$12.00 – $15.00</h4>
                             </div>
                         </div>
@@ -82,14 +83,14 @@
 					<div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="lgx-single-speaker lgx-single-speaker-sm">
                             <figure>
-                                <a class="shop-img" href=""><img src="assets/img/shop3.jpg" alt="speaker"/></a>
+                                <a class="shop-img" href="{{URL::to('/single-shop')}}"><img src="assets/img/shop3.jpg" alt="speaker"/></a>
                                 <figcaption>
-                                    <a class="sp-tw" href="#"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                    <a class="sp-tw" href="{{URL::to('/single-shop')}}"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
                                     
                                 </figcaption>
                             </figure>
                             <div class="speaker-info">
-                                <h3 class="title"><a href="speaker-single.html">Team Tiger T-Shirt</a></h3>
+                                <h3 class="title"><a href="{{URL::to('/single-shop')}}">Team Tiger T-Shirt</a></h3>
                                 <h4 class="subtitle">$12.00 – $15.00</h4>
                             </div>
                         </div>
@@ -98,14 +99,14 @@
 					<div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="lgx-single-speaker lgx-single-speaker-sm">
                             <figure>
-                                <a class="shop-img" href=""><img src="assets/img/shop3.jpg" alt="speaker"/></a>
+                                <a class="shop-img" href="{{URL::to('/single-shop')}}"><img src="assets/img/shop3.jpg" alt="speaker"/></a>
                                 <figcaption>
-                                    <a class="sp-tw" href="#"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                    <a class="sp-tw" href="{{URL::to('/single-shop')}}"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
                                     
                                 </figcaption>
                             </figure>
                             <div class="speaker-info">
-                                <h3 class="title"><a href="speaker-single.html">Team Tiger T-Shirt</a></h3>
+                                <h3 class="title"><a href="{{URL::to('/single-shop')}}">Team Tiger T-Shirt</a></h3>
                                 <h4 class="subtitle">$12.00 – $15.00</h4>
                             </div>
                         </div>
@@ -114,14 +115,14 @@
 					<div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="lgx-single-speaker lgx-single-speaker-sm">
                             <figure>
-                                <a class="shop-img" href=""><img src="assets/img/shop3.jpg" alt="speaker"/></a>
+                                <a class="shop-img" href="{{URL::to('/single-shop')}}"><img src="assets/img/shop3.jpg" alt="speaker"/></a>
                                 <figcaption>
-                                    <a class="sp-tw" href="#"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                    <a class="sp-tw" href="{{URL::to('/single-shop')}}"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
                                     
                                 </figcaption>
                             </figure>
                             <div class="speaker-info">
-                                <h3 class="title"><a href="speaker-single.html">Team Tiger T-Shirt</a></h3>
+                                <h3 class="title"><a href="{{URL::to('/single-shop')}}">Team Tiger T-Shirt</a></h3>
                                 <h4 class="subtitle">$12.00 – $15.00</h4>
                             </div>
                         </div>
@@ -130,14 +131,14 @@
 					<div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="lgx-single-speaker lgx-single-speaker-sm">
                             <figure>
-                                <a class="shop-img" href=""><img src="assets/img/shop3.jpg" alt="speaker"/></a>
+                                <a class="shop-img" href="{{URL::to('/single-shop')}}"><img src="assets/img/shop3.jpg" alt="speaker"/></a>
                                 <figcaption>
-                                    <a class="sp-tw" href="#"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                    <a class="sp-tw" href="{{URL::to('/single-shop')}}"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
                                     
                                 </figcaption>
                             </figure>
                             <div class="speaker-info">
-                                <h3 class="title"><a href="speaker-single.html">Team Tiger T-Shirt</a></h3>
+                                <h3 class="title"><a href="{{URL::to('/single-shop')}}">Team Tiger T-Shirt</a></h3>
                                 <h4 class="subtitle">$12.00 – $15.00</h4>
                             </div>
                         </div>
@@ -145,30 +146,14 @@
 					<div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="lgx-single-speaker lgx-single-speaker-sm">
                             <figure>
-                                <a class="shop-img" href=""><img src="assets/img/shop3.jpg" alt="speaker"/></a>
+                                <a class="shop-img" href="{{URL::to('/single-shop')}}"><img src="assets/img/shop3.jpg" alt="speaker"/></a>
                                 <figcaption>
-                                    <a class="sp-tw" href="#"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                    <a class="sp-tw" href="{{URL::to('/single-shop')}}"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
                                     
                                 </figcaption>
                             </figure>
                             <div class="speaker-info">
-                                <h3 class="title"><a href="speaker-single.html">Team Tiger T-Shirt</a></h3>
-                                <h4 class="subtitle">$12.00 – $15.00</h4>
-                            </div>
-                        </div>
-                    </div>
-					
-					<div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="lgx-single-speaker lgx-single-speaker-sm">
-                            <figure>
-                                <a class="shop-img" href=""><img src="assets/img/shop3.jpg" alt="speaker"/></a>
-                                <figcaption>
-                                    <a class="sp-tw" href="#"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
-                                    
-                                </figcaption>
-                            </figure>
-                            <div class="speaker-info">
-                                <h3 class="title"><a href="speaker-single.html">Team Tiger T-Shirt</a></h3>
+                                <h3 class="title"><a href="{{URL::to('/single-shop')}}">Team Tiger T-Shirt</a></h3>
                                 <h4 class="subtitle">$12.00 – $15.00</h4>
                             </div>
                         </div>
@@ -177,14 +162,30 @@
 					<div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="lgx-single-speaker lgx-single-speaker-sm">
                             <figure>
-                                <a class="shop-img" href=""><img src="assets/img/shop3.jpg" alt="speaker"/></a>
+                                <a class="shop-img" href="{{URL::to('/single-shop')}}"><img src="assets/img/shop3.jpg" alt="speaker"/></a>
                                 <figcaption>
-                                    <a class="sp-tw" href="#"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                    <a class="sp-tw" href="{{URL::to('/single-shop')}}"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
                                     
                                 </figcaption>
                             </figure>
                             <div class="speaker-info">
-                                <h3 class="title"><a href="speaker-single.html">Team Tiger T-Shirt</a></h3>
+                                <h3 class="title"><a href="{{URL::to('/single-shop')}}">Team Tiger T-Shirt</a></h3>
+                                <h4 class="subtitle">$12.00 – $15.00</h4>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="lgx-single-speaker lgx-single-speaker-sm">
+                            <figure>
+                                <a class="shop-img" href="{{URL::to('/single-shop')}}"><img src="assets/img/shop3.jpg" alt="speaker"/></a>
+                                <figcaption>
+                                    <a class="sp-tw" href="{{URL::to('/single-shop')}}"><i class="fa fa-shopping-cart"> ADD TO CART</i></a>
+                                    
+                                </figcaption>
+                            </figure>
+                            <div class="speaker-info">
+                                <h3 class="title"><a href="{{URL::to('/single-shop')}}">Team Tiger T-Shirt</a></h3>
                                 <h4 class="subtitle">$12.00 – $15.00</h4>
                             </div>
                         </div>

@@ -18,14 +18,14 @@
                                                     <span class="icon-bar"></span>
                                                 </button>
                                                 <div class="lgx-logo">
-                                                    <a href="index-slider.html" class="lgx-scroll">
+                                                    <a href="{{URL::to('/')}}" class="lgx-scroll">
                                                         <img src="assets/img/acnlogo.png" alt="Logo"/>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="collapse navbar-collapse">
                                                 <ul class="nav navbar-nav lgx-nav">
-												    <li><a class="lgx-scroll" href="{{URL::to('/home')}}">Home</a></li>
+												    <li><a class="lgx-scroll" href="{{URL::to('/')}}">Home</a></li>
                                                     <li class="dropdown">
                                                         <a href="JavaScript:void(0);">System & Training<b class="caret"></b></a>
                                                         <ul class="dropdown-menu multi-level">

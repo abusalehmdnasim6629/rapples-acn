@@ -9,7 +9,7 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-offset-2 col-sm-8 col-xs-12">
-                                            <h3 class="title">What we do</h3>
+                                            <h1 class="title">What We Do</h1>
 											<p class="wwd">Rockstar Team Tiger is a group of passionate entrepreneurs 
 											working towards helping people around the world to achieve their 
 											dreams and goals.</p>

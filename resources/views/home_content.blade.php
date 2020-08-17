@@ -45,10 +45,7 @@
 	.wwd{
 	  color:white;
 	}
-	.logo{
-	  width:226px;
-	  height:74px;
-	}
+	
 	.abtacn{
 	  margin-top:5%;
 	  
@@ -57,7 +54,76 @@
 	.rw{
 	   margin-top:15px;
 	
+    }
+    
+    .mdl{
+	  text-align:center;
 	}
+	
+	img {vertical-align: middle;}
+    /* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin-left:10%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
 	
 
 </style>
@@ -639,8 +705,157 @@
     </div>
 </section>
 <!--SCHEDULE END-->
+<!-- <section>
+    <div class="container">
+	           <div class="row">
+					<div class="col-md-2">
+					
+					</div>
+					<div class="col-md-8 mdl">
+					    
+						<h2>COMMUNITY SUPPORT</h2>
+						<h3>Together We Can Truly Make A Difference</h3>
+	                    <p>ACN supports a range of organisations, both on a local and global scale. 
+						We focus our efforts on organisations directly impacting children. 
+						At ACN we believe that when you impact the life of a child, you do more 
+						than just change their day; you change their life. Every year ACN hosts 
+						many International Training Events in cities around the world. At every event, 
+						we collect contributions from thousands of generous ACN Independent Business Owners 
+						and employees. ACN then matches these contributions dollar-for-dollar.
+                        </p>
+						<hr>
+					</div>
+					<div class="col-md-2">
+					
+					</div>
+				</div>
+            <div class="row">
+					<div class="col-md-12">
+					   <div class="slideshow-container">
 
+							<div class="mySlides fade">
+							
+							  <img src="assets/img/sg2.jpg"  style="width:22%;height:200px;">
+							  <img src="assets/img/sg3.jpg"  style="width:22%;height:200px;">
+							  <img src="assets/img/sg4.jpg"  style="width:22%;height:200px;">
+							  <img src="assets/img/sg5.jpg"  style="width:22%;height:200px;">
+						
+							</div>
 
+							<div class="mySlides fade">
+							  
+							  <img src="assets/img/sg5.jpg"  style="width:22%;height:200px;">
+							  <img src="assets/img/sg3.jpg"  style="width:22%;height:200px;">
+							  <img src="assets/img/sg4.jpg"  style="width:22%;height:200px;">
+							  <img src="assets/img/sg2.jpg"  style="width:22%;height:200px;">
+							  
+							</div>
 
+							
+
+							</div>
+							<br>
+
+							<div style="text-align:center">
+							  <span class="dot"></span> 
+							  <span class="dot"></span> 
+							  
+							</div>
+						
+					</div>
+					
+				</div>
+            
+    </div>
+</section> -->
+<!--SPONSORED-->
+<section>
+    <div id="lgx-sponsors" class="lgx-sponsors">
+        <div class="lgx-inner-bg">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <div class="lgx-heading-area">
+                                <h2 class="lgx-heading">
+                                    <span class="back-heading"><i class="fa fa-life-ring" aria-hidden="true"></i></span>
+                                    <span class="heading">COMMUNITY SUPPORT</span>
+                                </h2>
+                                <p class="text">
+                                Together We Can Truly Make A Difference
+                                </p>
+                                <p>ACN supports a range of organisations, both on a local and global scale. 
+						We focus our efforts on organisations directly impacting children. 
+						At ACN we believe that when you impact the life of a child, you do more 
+						than just change their day; you change their life. Every year ACN hosts 
+						many International Training Events in cities around the world. At every event, 
+						we collect contributions from thousands of generous ACN Independent Business Owners 
+						and employees. ACN then matches these contributions dollar-for-dollar.
+                        </p>
+                            </div>
+                        </div>
+                        <!--//main COL-->
+                    </div>
+                    <!--//main row-->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            
+                            <div class="sponsors-area">
+                                <div class="single">
+                                    <a class="" href="#"><img src="assets/img/sg3.jpg" alt="sponsor"/></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="#"><img src="assets/img/sg5.jpg" alt="sponsor"/></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="#"><img src="assets/img/sg4.jpg" alt="sponsor"/></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="#"><img src="assets/img/sg3.jpg" alt="sponsor"/></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="#"><img src="assets/img/sg5.jpg" alt="sponsor"/></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="#"><img src="assets/img/sg4.jpg" alt="sponsor"/></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="#"><img src="assets/img/sg3.jpg" alt="sponsor"/></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//col-->
+                    </div>
+                   
+                    <!--//row-->
+                   
+                </div>
+                <!--//container-->
+            </div>
+        </div>
+        <!--//lgx-inner-->
+    </div>
+</section>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides,2000); // Change image every 2 seconds
+}
+</script>
 
 @endsection
