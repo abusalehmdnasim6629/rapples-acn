@@ -11,12 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 //HomeController
-Route::get('/home','HomeController@index');
+Route::get('/','HomeController@index');
 Route::get('/training-and-resources','HomeController@training');
 Route::get('/zoompbr_booking','HomeController@zoom');
 Route::get('/rd-and-above','HomeController@rd');
