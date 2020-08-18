@@ -1,3 +1,8 @@
+ @php 
+   $whatDo =  App\WhatDo::first();
+   $LogoFooter =  App\LogoFooter::first();
+
+ @endphp
  <!--FOOTER-->
  <footer>
         <div id="lgx-footer" class="lgx-footer">
@@ -9,10 +14,10 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-offset-2 col-sm-8 col-xs-12">
-                                            <h1 class="title">What We Do</h1>
-											<p class="wwd">Rockstar Team Tiger is a group of passionate entrepreneurs 
-											working towards helping people around the world to achieve their 
-											dreams and goals.</p>
+                                            <h1 class="title">{{ $whatDo->title }}</h1>
+											<p class="wwd">
+                                            {{ $whatDo->description }}
+                                            </p>
                                            
                                         </div>
                                     </div> <!--//ROW-->
@@ -21,7 +26,7 @@
                         </div>
                         <div class="lgx-logo">
                             <a href="" class="lgx-scroll">
-                                <img class="logo" src="assets/img/acnlogo.png" alt=""/>
+                                <img class="logo" src="{{ $LogoFooter->logo}}" alt=""/>
                             </a>
                         </div>
                         <div class="footer-social">
@@ -34,9 +39,9 @@
                                 <li><a class="sp-" href="#"><i class="fa fa-video-camera"></i></a></li>
                             </ul>
                         </div>
-                        <p class="lgx-copyright"><span class="themename">https://worldwidewealthinc.com/© Copyright 2019 by Team Tiger</span></p>
+                        <p class="lgx-copyright"><span class="themename">{{ $LogoFooter->footer_copywrite}}</span></p>
                     
-					<p class="lgx-copyright"><span class="text">This website is created and maintained by Independent Business Owners of ACN.</span></p>
+					<p class="lgx-copyright"><span class="">{{ $LogoFooter->footer_last}}</span></p>
 
 					</div>
                     <!-- //.CONTAINER -->

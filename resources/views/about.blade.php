@@ -112,12 +112,11 @@
 					
 					</div>
 					<div class="col-md-8 mdl">
-						<h3>A WINNING TEAM</h3>
-						<h4>How are we making a difference?</h4>
-						<p>Rockstar Team Tiger is a group of highly motivated and successful entrepreneurs. 
-						Our goal is to mentor, guide and help individuals from all background around the globe 
-						to create a financially free lifestyle. Our team has helped create many success stories 
-						and you can be the next!</p>
+						<h3>{{ $WinTeam->title }}</h3>
+						<h4>{{ $WinTeam->subtitle }}</h4>
+						<p>
+						{{ $WinTeam->description }}
+						</p>
 						<hr>
 					</div>
 					<div class="col-md-2">
@@ -130,12 +129,11 @@
 					
 					</div>
 					<div class="col-md-8 mdl">
-						<h3>OUR VISION</h3>
-						<h4>Everyone deserves a chance!</h4>
-						<p>Every one deserves a fare chance to achieve financial independence and time 
-						freedom, live life to the fullest with people they love and care for. Our vision 
-						is to enable, guide and support people from around the globe in their quest for 
-						a better life.</p>
+						<h3>{{ $Vision->title }}</h3>
+						<h4>{{ $Vision->subtitle }}</h4>
+						<p>
+						{{ $Vision->description }}
+						</p>
 						<hr>
 					</div>
 					<div class="col-md-2">
@@ -148,11 +146,10 @@
 					
 					</div>
 					<div class="col-md-8 mdl">
-						<h3>A PROVEN SYSTEM</h3>
-						<h4>A system that delivers results!</h4>
-						<p>This business model is very simple and duplication is the key. 
-						We are blessed with dedicated top leaders and high achievers of the Rockstar team, 
-						who have developed a proven system that any one can easily follow and gain great success.
+						<h3>{{ $ProvenSystem->title }}</h3>
+						<h4>{{ $ProvenSystem->subtitle }}</h4>
+						<p>
+						{{ $ProvenSystem->description }}
                         </p>
 						<hr>
 					</div>
@@ -194,14 +191,10 @@
 					
 					</div>
 					<div class="col-md-8 mdl">
-					    <img src="assets/img/pr.png" alt="Logo"/>
-						<h2>END CHILDHOOD HUNGER</h2>
-						<h3>Choosing ACN Means Making a Choice to End Childhood Hunger</h3>
-	                    <p>Through ACN’s Project Feeding Kids program, you can help end childhood hunger 
-						right here at home by simply purchasing and paying for services you are already 
-						using and paying for anyway. When you become an ACN customer, a child gets fed. 
-						And every time you pay your select ACN bills each month, another child gets fed. 
-						ACN will provide 1.5 million meals this year.
+					    <img src="{{ $Hunger->image }}" alt="Logo"/>
+						<h2>{{ $Hunger->title }}</h2>
+						<h3>{{ $Hunger->subtitle }}</h3>
+	                    <p>{{ $Hunger->description }}
                         </p>
 						<hr>
 					</div>
@@ -215,16 +208,10 @@
 					
 					</div>
 					<div class="col-md-8 mdl">
-					    <img src="assets/img/pr.png" alt="Logo"/>
-						<h2>COMMUNITY SUPPORT</h2>
-						<h3>Together We Can Truly Make A Difference</h3>
-	                    <p>ACN supports a range of organisations, both on a local and global scale. 
-						We focus our efforts on organisations directly impacting children. 
-						At ACN we believe that when you impact the life of a child, you do more 
-						than just change their day; you change their life. Every year ACN hosts 
-						many International Training Events in cities around the world. At every event, 
-						we collect contributions from thousands of generous ACN Independent Business Owners 
-						and employees. ACN then matches these contributions dollar-for-dollar.
+					   
+						<h2>{{ $CommunitySupport->title }}</h2>
+						<h3>{{ $CommunitySupport->subtitle }}</h3>
+	                    <p>{{ $CommunitySupport->description }}
                         </p>
 						<hr>
 					</div>

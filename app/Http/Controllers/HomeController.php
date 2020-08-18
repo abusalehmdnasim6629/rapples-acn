@@ -2,14 +2,56 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Validator;
+use Hash;
+use App\aboutAcn;
+use App\AboutTeam;
+use App\SolidCompany;
+use App\SecondQuote;
+use App\CommunitySupport;
+use App\Slider;
+
+
+
+use Session;
+
+session_start();
 
 class HomeController extends Controller
 {
     
     public function index(){
+      $about =  aboutAcn::first();
+      $scompany =  SolidCompany::first();
+      $aboutTeam =  AboutTeam::first();
+      $SecondQuote =  SecondQuote::first();
+      $CommunitySupport =  CommunitySupport::first();
+      $slider =  Slider::all();
+   
 
-        return view('home_content');
+
+
+
+
+        
+        return view('home_content')
+               ->with('about',$about)
+               ->with('scompany',$scompany)
+               ->with('aboutTeam',$aboutTeam)
+               ->with('SecondQuote',$SecondQuote)
+               ->with('CommunitySupport',$CommunitySupport)
+               ->with('slider',$slider);
+
+
+
+
+
     }
 
     public function training(){
@@ -47,20 +89,14 @@ class HomeController extends Controller
         return view('leader');
     }
 
-    public function about(){
-
-        return view('about');
-    }
+    
 
     public function contact(){
 
         return view('contact');
     }
 
-    public function gallery(){
-
-        return view('gallery');
-    }
+  
 
     public function shop(){
 

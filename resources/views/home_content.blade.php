@@ -133,78 +133,85 @@
                 <div class="lgx-inner">
 
                     <div id="lgx-main-slider" class="owl-carousel ">
-
-                        <!--SLIDER ITEM 1-->
-
-                        <div class="lgx-item-common lgx-item-left">
-
-                            <div class="col-sm-12g">
-                                <div class="slider-text-single">
-                                    <figure>
-                                        <img src="assets/img/bg.jpg" alt="slide"/>
-                                        <figcaption>
-                                            <div class="lgx-container">
-                                                <div class="lgx-hover-link">
-                                                    <div class="lgx-vertical">
-                                                      
-												
-														<p class="scontent1 lgx-title">ACN SUPER SATURDAY</p>
-														<p class="scontent1 lgx-subtitle">LIVE Presentation & Training</p>
-														<p class="scontent1 lgx-subtitle">Co-Founders, COCs, SVPs & Leaders</p>
-														<p class="scontent2 lgx-subtitle"><span>Saturday @</span>12pm EST</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div> <!--//.col-->
-                        </div>
-                        <!--SLIDER ITEM 1 End-->
-
-                        <!--SLIDER ITEM 2-->
+                    @php 
+                          $i=0;
+                    @endphp   
                         
+                     @foreach( $slider as $s )
+                        
+                               @if( $i == 0 )
+                                <div class="lgx-item-common lgx-item-left">
 
-                        <!--SLIDER ITEM 3-->
-                        <div class="lgx-item-common lgx-item-right">
-                            <div class="col-sm-12g">
-                                <div class="slider-text-single">
-                                    <figure>
-                                        <img src="assets/img/bg.jpg" alt="slide"/>
-                                        <figcaption>
-                                            <div class="lgx-container">
-                                                <div class="lgx-hover-link">
-                                                    <div class="lgx-vertical">                                                     
-														<p class="scontent lgx-title ">BRISBANE</p>
-														<p class="scontent1 lgx-subtitle ">International Event</p>
-														<p class="scontent1 lgx-subtitle ">Co-Founders, COCs, SVPs & Leaders</p>
-														<p class="scontent2 lgx-subtitle "><span>26 & 27</span>September</p>
+                                    <div class="col-sm-12g">
+                                        <div class="slider-text-single">
+                                            <figure>
+                                                <img src="assets/img/bg.jpg" alt="slide"/>
+                                                <figcaption>
+                                                    <div class="lgx-container">
+                                                        <div class="lgx-hover-link">
+                                                            <div class="lgx-vertical">
+                                                            
+                                                        
+                                                                <p class="scontent1 lgx-title">{{ $s->title }}</p>
+                                                                <p class="scontent1 lgx-subtitle">{{ $s->subtitle }}</p>
+                                                                <p class="scontent1 lgx-subtitle">{{ $s->description }}</p>
+                                                                <p class="scontent2 lgx-subtitle"><span> {{ $s->time }} </span></p>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </figcaption>
-                                    </figure>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div> <!--//.col-->
-                        </div>
-                        <!--SLIDER ITEM 3 End-->
+                                @php 
+                                  $i=1;
+                                @endphp
+                                @else
+                     
+                           
+                                    <div class="lgx-item-common lgx-item-right">
+                                        <div class="col-sm-12g">
+                                            <div class="slider-text-single">
+                                                <figure>
+                                                    <img src="assets/img/bg.jpg" alt="slide"/>
+                                                    <figcaption>
+                                                        <div class="lgx-container">
+                                                            <div class="lgx-hover-link">
+                                                                <div class="lgx-vertical">                                                     
+                                                                    <p class="scontent lgx-title ">{{ $s->title }}</p>
+                                                                    <p class="scontent1 lgx-subtitle ">{{ $s->subtitle }}</p>
+                                                                    <p class="scontent1 lgx-subtitle ">{{ $s->description }}</p>
+                                                                    <p class="scontent2 lgx-subtitle "><span>{{ $s->time }} </span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                @endif    
 
-                    </div> <!--//.lgx-main-slider-->
+                        @endforeach
+                  
+
+                    </div>
 
 
-                    <!-- //.CONTAINER -->
+              
                 </div>
-                <!-- //.INNER -->
+            
             </div>
         </div>
     </section>
     <!--SLIDER END-->
 
 
-    <!--circular-countdown-->
    
-    <!--circular-countdown End-->
 
+
+<section>
 	<!--qoute-->
 	<div id="lgx-speakers" class="lgx-speakers">
         <div class="lgx-inner">
@@ -222,22 +229,17 @@
 									</figcaption>
 								</figure>
 								<div class="speaker-info">
-									<h3 class="title"><a href="speaker-single.html">MD Rahman</a></h3>
-									<h4 class="subtitle">Senior Vice President & Circle of Champions</h4>
+									<h3 class="title"><a href="speaker-single.html">{{ $scompany->personName }}</a></h3>
+									<h4 class="subtitle">{{ $scompany->personDesignation }}</h4>
 								</div>
 						</div>
 					</div>
 
 	                <div class="col-xs-12 col-sm-6 col-md-8 center">
 							<div class="">
-							    <h3>Solid Company - Proven System and Leadership</h3>
+							    <h3>{{ $scompany->title }}</h3>
 							    <p class="pra">
-								  When MD. Rahman saw his first onstage promotion at an international ACN convention in the fall of 2012, he was hooked. 
-								  “I was on a quest to achieve the American Dream and secure a future for my family,” 
-								  he says. Rahman realized he’d been handed an opportunity to change the course of his family’s life. 
-								  “I was highly inspired and right away set my goal to become the first Bangladeshi Regional Vice President 
-								  (RVP) in the United States within 12 months,” he says. “And, yes, with God’s grace, I was able 
-								  to achieve my goal within the set time.”
+                                {{ $scompany->description }}
 								</p>
 						    </div>
 					</div>					
@@ -252,25 +254,9 @@
 
 	                <div class="col-xs-12 col-sm-6 col-md-8 center2">
 							<div class="">
-							    <h3>Lorem Ipsum</h3>
+							    <h3>{{ $SecondQuote->title }}</h3>
 							    <p class="pra">
-								  I am a family man, married to my amazing wife Lisa, 
-								  and been blessed with 3 gorgeous daughters Holly, Nicky, 
-								  and Monique. I stumbled into this industry by accident and 
-								  have now been in it for close to 20 years! It has been one 
-								  of life’s most exhilarating journeys having been fortunate 
-								  enough to have gained my experience on both sides of the 
-								  industry, both the field side having built a significant 
-								  organisation and corporate side having been General Manager 
-								  of multinational organisations leading 5 country markets 
-								  across Asia Pacific.
-
-                                  I am nobody special, just a average person chasing down a 
-								  dream…and on a mission to realize a simple Vision “Touching 
-								  hearts, and changing lives”! It only takes one person to make 
-								  an impact on the world, so with that said I hope to be able to 
-								  serve you to realize your life’s journey no matter how big or 
-								  how small!
+                                {{ $SecondQuote->description }}
 								</p>
 						    </div>
 					</div>	
@@ -287,8 +273,8 @@
 									</figcaption>
 								</figure>
 								<div class="speaker-info">
-									<h3 class="title"><a href="speaker-single.html">Mark Boonzaier</a></h3>
-									<h4 class="subtitle">Senior Vice President</h4>
+									<h3 class="title"><a href="speaker-single.html">{{ $SecondQuote->personName }}</a></h3>
+									<h4 class="subtitle">{{ $SecondQuote->personDesignation }}</h4>
 								</div>
 						</div>
 					</div>	
@@ -312,11 +298,9 @@
 
 	                    <div class="col-xs-12 col-sm-6 col-md-8 center4">
 							<div class="">
-							    <h3>About Team Tiger</h3>
+							    <h3>{{ $aboutTeam->title }}</h3>
 							    <p class="pra">
-								 Rockstar Team Tiger is a group of passionate entrepreneurs 
-								 working towards helping people around the world to achieve 
-								 their dreams and goals.
+								{{ $aboutTeam->description }}
 								</p>
 						    </div>
 					    </div>					
@@ -330,25 +314,9 @@
 
 	                <div class="col-xs-12 col-sm-6 col-md-7 ">
 							<div class="">
-							    <h3>About ACN</h3>
+							    <h3>{{ $about->title}}</h3>
 							    <p class="pra">
-								Founded in 1993, ACN provides you with a Home Based Opportunity 
-								with the total support of the company and the team behind you every 
-								step of the way.
-                                ACN provides opportunity to individuals like you to become an 
-								Independent Business Owner and offer the services that people 
-								are already using and spending money on every day, including 
-								phone service, wireless, natural gas and electricity, merchant 
-								services, high-speed Internet, TV, home security and automation 
-								and more. So there’s no change in buying habits, and you’ll never 
-								have to convince someone to purchase products they don’t need or 
-								can’t afford.
-                                Leverage the power of Residual Income.
-                                ACN provides outstanding service and support to Independent 
-								Business Owners and their customers. They are focused in helping 
-								as many people to help change their lives with hard work and 
-								dedication. Now in four continents and 27 Countries and more on 
-								the way.
+                                {{ $about->description}}
 								</p>
 						    </div>
 					</div>	
@@ -376,9 +344,7 @@
 	</div>		 
 	
 	
-	<!--end qoute-->
-
-
+</section>
 <!--SCHEDULE-->
 <section>
     <div id="lgx-schedule" class="lgx-schedule">
@@ -429,7 +395,7 @@
                                                     <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
                                                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
                                                 </div>
-                                                <!--//.single tab-->
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -455,7 +421,7 @@
                                                     <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
                                                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
                                                 </div>
-                                                <!--//.single tab-->
+                                            
                                             </div>
                                         </div>
                                     </div>
@@ -481,7 +447,7 @@
                                                     <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
                                                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
                                                 </div>
-                                                <!--//.single tab-->
+                                        
                                             </div>
                                         </div>
                                     </div>
@@ -507,7 +473,7 @@
                                                     <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
                                                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
                                                 </div>
-                                                <!--//.single tab-->
+                                        
                                             </div>
                                         </div>
                                     </div>
@@ -532,7 +498,7 @@
                                                     <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
                                                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
                                                 </div>
-                                                <!--//.single tab-->
+                                         
                                             </div>
                                         </div>
                                     </div>
@@ -559,7 +525,7 @@
                                                     <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
                                                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
                                                 </div>
-                                                <!--//.single tab-->
+                                             
                                             </div>
                                         </div>
                                     </div>
@@ -584,7 +550,7 @@
                                                     <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
                                                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
                                                 </div>
-                                                <!--//.single tab-->
+                                              
                                             </div>
                                         </div>
                                     </div>
@@ -609,7 +575,7 @@
                                                     <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
                                                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
                                                 </div>
-                                                <!--//.single tab-->
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -636,7 +602,7 @@
                                                     <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
                                                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
                                                 </div>
-                                                <!--//.single tab-->
+                                              
                                             </div>
                                         </div>
                                     </div>
@@ -661,7 +627,7 @@
                                                     <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
                                                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
                                                 </div>
-                                                <!--//.single tab-->
+                                           
                                             </div>
                                         </div>
                                     </div>
@@ -688,7 +654,7 @@
                                                     <h3 class="title"><a href="#">Digital World Event Introduction</a></h3>
                                                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ipsum primis posuere cubilia Curae Nullam varius a felis eu dictum...</p>
                                                 </div>
-                                                <!--//.single tab-->
+                                             
                                             </div>
                                         </div>
                                     </div>
@@ -697,78 +663,14 @@
                         </div>
                     </div>
                 </div>
-                <!--//.ROW-->
+               
             </div>
-            <!-- //.CONTAINER -->
+           
         </div>
-        <!-- //.INNER -->
+   
     </div>
-</section>
-<!--SCHEDULE END-->
-<!-- <section>
-    <div class="container">
-	           <div class="row">
-					<div class="col-md-2">
-					
-					</div>
-					<div class="col-md-8 mdl">
-					    
-						<h2>COMMUNITY SUPPORT</h2>
-						<h3>Together We Can Truly Make A Difference</h3>
-	                    <p>ACN supports a range of organisations, both on a local and global scale. 
-						We focus our efforts on organisations directly impacting children. 
-						At ACN we believe that when you impact the life of a child, you do more 
-						than just change their day; you change their life. Every year ACN hosts 
-						many International Training Events in cities around the world. At every event, 
-						we collect contributions from thousands of generous ACN Independent Business Owners 
-						and employees. ACN then matches these contributions dollar-for-dollar.
-                        </p>
-						<hr>
-					</div>
-					<div class="col-md-2">
-					
-					</div>
-				</div>
-            <div class="row">
-					<div class="col-md-12">
-					   <div class="slideshow-container">
+</section> 
 
-							<div class="mySlides fade">
-							
-							  <img src="assets/img/sg2.jpg"  style="width:22%;height:200px;">
-							  <img src="assets/img/sg3.jpg"  style="width:22%;height:200px;">
-							  <img src="assets/img/sg4.jpg"  style="width:22%;height:200px;">
-							  <img src="assets/img/sg5.jpg"  style="width:22%;height:200px;">
-						
-							</div>
-
-							<div class="mySlides fade">
-							  
-							  <img src="assets/img/sg5.jpg"  style="width:22%;height:200px;">
-							  <img src="assets/img/sg3.jpg"  style="width:22%;height:200px;">
-							  <img src="assets/img/sg4.jpg"  style="width:22%;height:200px;">
-							  <img src="assets/img/sg2.jpg"  style="width:22%;height:200px;">
-							  
-							</div>
-
-							
-
-							</div>
-							<br>
-
-							<div style="text-align:center">
-							  <span class="dot"></span> 
-							  <span class="dot"></span> 
-							  
-							</div>
-						
-					</div>
-					
-				</div>
-            
-    </div>
-</section> -->
-<!--SPONSORED-->
 <section>
     <div id="lgx-sponsors" class="lgx-sponsors">
         <div class="lgx-inner-bg">
@@ -779,24 +681,20 @@
                             <div class="lgx-heading-area">
                                 <h2 class="lgx-heading">
                                     <span class="back-heading"><i class="fa fa-life-ring" aria-hidden="true"></i></span>
-                                    <span class="heading">COMMUNITY SUPPORT</span>
+                                    <span class="heading">{{ $CommunitySupport->title }}</span>
                                 </h2>
-                                <p class="text">
-                                Together We Can Truly Make A Difference
+                                <p class="text" style="color:black">
+                                {{ $CommunitySupport->subtitle }}
                                 </p>
-                                <p>ACN supports a range of organisations, both on a local and global scale. 
-						We focus our efforts on organisations directly impacting children. 
-						At ACN we believe that when you impact the life of a child, you do more 
-						than just change their day; you change their life. Every year ACN hosts 
-						many International Training Events in cities around the world. At every event, 
-						we collect contributions from thousands of generous ACN Independent Business Owners 
-						and employees. ACN then matches these contributions dollar-for-dollar.
-                        </p>
+                                <p>
+                                
+                                {{ $CommunitySupport->description }}
+                                </p>
                             </div>
                         </div>
-                        <!--//main COL-->
+                   
                     </div>
-                    <!--//main row-->
+         
                     <div class="row">
                         <div class="col-xs-12">
                             
@@ -824,16 +722,16 @@
                                 </div>
                             </div>
                         </div>
-                        <!--//col-->
+                      
                     </div>
                    
-                    <!--//row-->
+                  
                    
                 </div>
-                <!--//container-->
+               
             </div>
         </div>
-        <!--//lgx-inner-->
+      
     </div>
 </section>
 <script>

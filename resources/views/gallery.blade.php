@@ -49,111 +49,15 @@
             <div id="lgx-memorisinner" class="lgx-memorisinner">
                 <div class="container-fluid text-center">
                     <div class="row">
-                        <div  class="lgx-single">
-                            <figure>
-                                <img class="gimg" title="Memories One" src="assets/img/g1.jpg" alt="Memories one"/>
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories One" href="assets/img/g1.jpg">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div  class="lgx-single">
-                            <figure>
-                                <img class="gimg"src="assets/img/g2.jpg" alt="Memories Two" title="Memories Two" />
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories Two" href="assets/img/g2.jpg">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div  class="lgx-single">
-                            <figure>
-                                <img class="gimg"src="assets/img/g3.jpg" alt="Memories Three" title="Memories Three" />
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories Three" href="assets/img/g3.jpg">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div  class="lgx-single">
-                            <figure>
-                                <img class="gimg"src="assets/img/g4.jpg" alt="Memories Four" title="Memories Four" />
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories Four" href="assets/img/g4.jpg">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="lgx-single">
-                            <figure>
-                                <img class="gimg"src="assets/img/g5.jpg" alt="Memories Five" title="Memories Five" />
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories Five" href="assets/img/g5.jpg">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="lgx-single">
-                            <figure>
-                                <img class="gimg"src="assets/img/g6.jpg" alt="Memories Six" title="Memories Six" />
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories Six" href="assets/img/g6.jpg">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div  class="lgx-single">
-                            <figure>
-                                <img class="gimg"src="assets/img/g7.jpg" alt="Memories Seven" title="Memories Seven" />
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories Seven" href="assets/img/g7.jpg"><i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
 
+                       @foreach( $Gallery as $g )
                         <div  class="lgx-single">
                             <figure>
-                                <img class="gimg"src="assets/img/g8.jpg" alt="Memories Eight" title="Memories Eight" />
+                                <img class="gimg" title="Memories One" src="{{ $g->image }}" alt="Memories one"/>
                                 <figcaption class="lgx-figcaption">
                                     <div class="lgx-hover-link">
                                         <div class="lgx-vertical">
-                                            <a title="Memories Eight" href="assets/img/g8.jpg">
+                                            <a title="{{ $g->title }}" href="{{ $g->image }}">
                                                 <i class="fa fa-search fa-2x"></i>
                                             </a>
                                         </div>
@@ -161,122 +65,8 @@
                                 </figcaption>
                             </figure>
                         </div>
-
-                        <div  class="lgx-single">
-                            <figure>
-                                <img class="gimg"title="Memories One" src="assets/img/g9.jpg" alt="Memories one"/>
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories One" href="assets/img/g9.jpg">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="lgx-single">
-                            <figure>
-                                <img class="gimg"src="assets/img/g10.jpg" alt="Memories Five" title="Memories Five" />
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories Five" href="assets/img/g10.jpg">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="lgx-single">
-                            <figure>
-                                <img class="gimg"src="assets/img/g11.jpg" alt="Memories Six" title="Memories Six" />
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories Six" href="assets/img/g11.jpg">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div  class="lgx-single">
-                            <figure>
-                                <img class="gimg"src="assets/img/g12.jpg" alt="Memories Seven" title="Memories Seven" />
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories Seven" href="assets/img/g12.jpg"><i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div  class="lgx-single">
-                            <figure>
-                                <img class="gimg" src="assets/img/g13.jpg" alt="Memories Seven" title="Memories Seven" />
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories Seven" href="assets/img/g13.jpg"><i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div  class="lgx-single">
-                            <figure>
-                                <img class="gimg" src="assets/img/g14.jpg" alt="Memories Eight" title="Memories Eight" />
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories Eight" href="assets/img/g14.jpg">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div  class="lgx-single">
-                            <figure>
-                                <img class="gimg" title="Memories One" src="assets/img/g15.jpg" alt="Memories one"/>
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories One" href="assets/img/g15.jpg">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="lgx-single">
-                            <figure>
-                                <img class="gimg" src="assets/img/g16.jpg" alt="Memories Five" title="Memories Five" />
-                                <figcaption class="lgx-figcaption">
-                                    <div class="lgx-hover-link">
-                                        <div class="lgx-vertical">
-                                            <a title="Memories Five" href="assets/img/g16.jpg">
-                                                <i class="fa fa-search fa-2x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
+                       @endforeach
+                      
 
                     </div>
 
@@ -287,14 +77,5 @@
     </div>
 </div>
 </section>
-
-
-
-
-
-
-
-
-
 
 @endsection

@@ -23,10 +23,10 @@ Route::get('/rd-and-above','HomeController@rd');
 Route::get('/recognition','HomeController@recognition');
 Route::get('/position-achiever-template','HomeController@template');
 Route::get('/meeting-and-events','HomeController@meeting');
-Route::get('/leaders','HomeController@leader');
-Route::get('/about-us','HomeController@about');
+Route::get('/leaders','LeaderController@leader');
+Route::get('/about-us','AboutController@about');
 Route::get('/contact-us','HomeController@contact');
-Route::get('/our-gallery','HomeController@gallery');
+Route::get('/our-gallery','AboutController@gallery');
 Route::get('/shop','HomeController@shop');
 Route::get('/single-shop','HomeController@single_shop');
 

@@ -1,3 +1,8 @@
+@php 
+  
+   $LogoFooter =  App\LogoFooter::first();
+
+ @endphp    
     <!--HEADER-->
     <header>
         <div id="lgx-header" class="lgx-header">
@@ -19,7 +24,7 @@
                                                 </button>
                                                 <div class="lgx-logo">
                                                     <a href="{{URL::to('/')}}" class="lgx-scroll">
-                                                        <img src="assets/img/acnlogo.png" alt="Logo"/>
+                                                        <img src="{{ $LogoFooter->logo}}" alt="Logo"/>
                                                     </a>
                                                 </div>
                                             </div>
