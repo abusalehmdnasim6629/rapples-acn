@@ -23,15 +23,19 @@ Route::get('/rd-and-above','HomeController@rd');
 Route::get('/recognition','HomeController@recognition');
 Route::get('/position-achiever-template','HomeController@template');
 Route::get('/meeting-and-events','HomeController@meeting');
-Route::get('/leaders','LeaderController@leader');
-Route::get('/about-us','AboutController@about');
 Route::get('/contact-us','HomeController@contact');
-Route::get('/our-gallery','AboutController@gallery');
 Route::get('/shop','HomeController@shop');
 Route::get('/single-shop','HomeController@single_shop');
 
+//AboutController
+Route::get('/our-gallery','AboutController@gallery');
+Route::get('/about-us','AboutController@about');
+Route::post('/send-message','AboutController@message');
 
 
+
+//leaderController
+Route::get('/leaders','LeaderController@leader');
 
 
 

@@ -16,6 +16,7 @@ use App\ProvenSystem;
 use App\CommunitySupport;
 use App\Hunger;
 use App\Gallery;
+use App\Contact;
 
 
 
@@ -49,5 +50,29 @@ class AboutController extends Controller
     public function gallery(){
         $Gallery =  Gallery::all();
         return view('gallery')->with('Gallery',$Gallery);
+    }
+
+    public function message(Request $request){
+       $contact = array();
+       $contact['name'] = $request->name;
+       $contact['email'] = $request->email;
+       $contact['ibo_no'] = $request->ibo;
+       $contact['up_line_tc'] = $request->tc;
+       $contact['subject'] = $request->subject;
+       $contact['message'] = $request->message;
+    
+       $insert = Contact::insert($contact);
+       if($insert){
+               
+     
+           toastr()->success('Message has been sent successfully!', 'Success', ['timeOut' => 3000]);
+           return Redirect()->back();
+       }else{
+        toastr()->success('Message has not been sent', 'Error', ['timeOut' => 3000]);
+
+        return Redirect()->back();
+       }
+
+
     }
 }

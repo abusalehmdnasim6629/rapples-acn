@@ -75,7 +75,7 @@
 	
 	 <!--Font awesome-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  @toastr_css
 	
 	<style>
    .scontent{
@@ -166,6 +166,9 @@
 
 
 </div>
+@jquery
+@toastr_js
+@toastr_render
 <!--//.LGX SITE CONTAINER-->
 <!-- *** ADD YOUR SITE SCRIPT HERE *** -->
 <!-- JQUERY  -->

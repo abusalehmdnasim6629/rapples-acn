@@ -25,7 +25,7 @@
 	}
     .pra{
 	  text-align: justify;
-	  font-size:20px;
+	  font-size:15px;
 	  margin-right:20px;
 	  
 	}
@@ -42,7 +42,7 @@
 	  border-radius: 5px;
 	  padding:20px;
 	  margin-bottom:20px;
-	  height:100%;
+	  height:670px;
 	  
 	}
 	.ldr{
